@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using uygoman.Models;
 
 namespace uygoman.DATA
 {
-    public class AppDBContext: DbContext
+    public class AppDBContext:DbContext
     {
 
         public AppDBContext(DbContextOptions<AppDBContext>options) :base(options)

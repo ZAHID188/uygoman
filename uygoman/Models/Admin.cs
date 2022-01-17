@@ -16,7 +16,7 @@ namespace uygoman.Models
         public string UserID { get; set; }
         [Required]
         [DisplayName("Password:")]
-        [Range(8, 20, ErrorMessage = "Password should be greater than 8 less than 20")]
+        //[Range(0,int.MaxValue,ErrorMessage="Password should be greater than 8 less than 20")]
         public string Password { get; set; }
 
     }

@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+
+    {
+      "library": "jquery@3.6.0",
+      "destination": "wwwroot/mybt/jquery3.6"
+    },
+    {
+      "library": "bootstrap@5.1.3",
+      "destination": "wwwroot/mybt/bootstrap/"
+    }
+  ]
+}

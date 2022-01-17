@@ -1,0 +1,76 @@
+﻿@model uygoman.Models.Admin
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<form method="post" asp-action="Deletepost">
+    <input asp-for="ID" hidden />
+    <div class="table-bordered ">
+      
+
+        <div class="form-group row">
+            <h2 class="text-info ">
+                Delete category
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <!-- this asp-for is the data anotation check the model-->
+                        <label asp-for="UserID"></label>
+                    </div>
+                    <div class="col-md-8">
+
+                        <input asp-for="UserID" disabled class="form-control" />
+                       
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <label asp-for="Password"></label>
+
+                    </div>
+                    <div class="col-md-8">
+                        <input asp-for="Password" disabled class="form-control" />
+                       
+
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-8">
+                        <div class="col-md-4">
+                            <input type="submit" class="btn btn-info" value="Delete" />
+                        </div>
+                        <div class="col-md-4">
+                            <a asp-action="Index" class="btn btn-success">
+                                Back
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                     
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</form>
+<!-- without this scripts the validation requires the server side validation
+    But with this I can do client side validation using javascript
+    to make simple :
+        IT DOES NOT REQUIRE TO REFRESH FOR VALIDATION BUT WITHOUT THIS REQUIRED REFFRESH-->
+
+
+
