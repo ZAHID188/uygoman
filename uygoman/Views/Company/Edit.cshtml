@@ -1,0 +1,158 @@
+﻿@model uygoman.Models.CompanyReg
+
+@{
+    ViewData["Title"] = "Edit";
+}
+@{
+    Layout = "_Layout2";
+}
+
+
+<form method="post">
+    <input asp-for="ID" hidden />
+    <div class="table-bordered ">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <br />
+
+        <div class="form-group row">
+            <h2 class="text-info ">
+                Edit Company Details
+            </h2>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class=" col-md-12">
+                <div class="form-group row bg-light">
+                    <div class="col-md-2">
+                        <!-- this asp-for is the data anotation check the model-->
+                        <label asp-for="CmpName"></label>
+                    </div>
+                    <div class="col-md-4">
+
+                        <input asp-for="CmpName" class="form-control" />
+                        <span asp-validation-for="CmpName" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label asp-for="CmpArabicName"></label>
+
+                    </div>
+                    <div class="col-md-3">
+                        <input asp-for="CmpArabicName" class="form-control" />
+                        <span asp-validation-for="CmpArabicName" class="text-danger"></span>
+
+                    </div>
+
+                </div>
+
+                <br />
+
+                <div class="form-group row bg-light">
+                    <div class="col-md-2">
+
+                        <label asp-for="CmpBrandName"></label>
+                    </div>
+                    <div class="col-md-4">
+
+                        <input asp-for="CmpBrandName" class="form-control" />
+                        <span asp-validation-for="CmpBrandName" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label asp-for="Email"></label>
+
+                    </div>
+                    <div class="col-md-4">
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+
+                    </div>
+
+                </div>
+
+                <br />
+
+                <div class="form-group row bg-light">
+                    <div class="col-md-2">
+
+                        <label asp-for="Phone"></label>
+                    </div>
+                    <div class="col-md-4">
+
+                        <input asp-for="Phone" class="form-control" />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label asp-for="ContactPerson"></label>
+
+                    </div>
+                    <div class="col-md-4">
+                        <input asp-for="ContactPerson" class="form-control" />
+                        <span asp-validation-for="ContactPerson" class="text-danger"></span>
+
+                    </div>
+
+                </div>
+
+                <br />
+
+                <div class="form-group row bg-light">
+                    <div class="col-md-3">
+
+                        <label asp-for="Upload"></label>
+                    </div>
+                    <div class="col-md-4">
+
+                        <input asp-for="Upload" class="form-control" />
+                        <span asp-validation-for="Upload" class="text-danger"></span>
+                    </div>
+
+
+
+                </div>
+
+                <br />
+
+
+
+
+                <div class="form-group row">
+
+                    <div class="col-md-4">
+                        <input type="submit" class="btn btn-info" value="Update" />
+                    </div>
+                    <div class="col-md-4">
+                        <a asp-action="Index" class="btn btn-success">
+                            Back
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</form>
+<!-- without this scripts the validation requires the server side validation
+    But with this I can do client side validation using javascript
+    to make simple :
+        IT DOES NOT REQUIRE TO REFRESH FOR VALIDATION BUT WITHOUT THIS REQUIRED REFFRESH-->
+@section Scripts{
+    @{ <partial name="_ValidationScriptsPartial" /> }
+}
+
+
+

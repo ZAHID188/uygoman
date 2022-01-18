@@ -151,6 +151,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\Company\Create.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Company\Delete.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Company\Edit.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\Shared\_Layout2.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

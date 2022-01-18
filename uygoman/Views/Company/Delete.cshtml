@@ -1,0 +1,144 @@
+﻿@model uygoman.Models.CompanyReg
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+@{
+    Layout = "_Layout2";
+}
+
+
+<form method="post" asp-action="Deletepost">
+    <input asp-for="ID" hidden />
+    <br />
+    <div class="table-bordered ">
+
+
+        <div class="form-group row">
+            <div class=" col-md-12">
+                <div class="form-group row bg-light">
+                    <div class="col-md-2">
+                        <!-- this asp-for is the data anotation check the model-->
+                        <label asp-for="CmpName"></label>
+                    </div>
+                    <div class="col-md-4">
+
+                        <input asp-for="CmpName" disabled class="form-control" />
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <label asp-for="CmpArabicName"></label>
+
+                    </div>
+                    <div class="col-md-3">
+                        <input asp-for="CmpArabicName" disabled class="form-control" />
+
+
+                    </div>
+
+                </div>
+
+                <br />
+
+                <div class="form-group row bg-light">
+                    <div class="col-md-2">
+
+                        <label asp-for="CmpBrandName"></label>
+                    </div>
+                    <div class="col-md-4">
+
+                        <input asp-for="CmpBrandName" disabled class="form-control" />
+
+                    </div>
+
+                    <div class="col-md-2">
+                        <label asp-for="Email"></label>
+
+                    </div>
+                    <div class="col-md-4">
+                        <input asp-for="Email" disabled class="form-control" />
+
+
+                    </div>
+
+                </div>
+
+                <br />
+
+                <div class="form-group row bg-light">
+                    <div class="col-md-2">
+
+                        <label asp-for="Phone"></label>
+                    </div>
+                    <div class="col-md-4">
+
+                        <input asp-for="Phone" disabled class="form-control" />
+
+                    </div>
+
+                    <div class="col-md-2">
+                        <label asp-for="ContactPerson"></label>
+
+                    </div>
+                    <div class="col-md-4">
+                        <input asp-for="ContactPerson" disabled class="form-control" />
+
+
+                    </div>
+
+                </div>
+
+                <br />
+
+                <div class="form-group row bg-light">
+                    <div class="col-md-3">
+
+                        <label asp-for="Upload"></label>
+                    </div>
+                    <div class="col-md-4">
+
+                        <input asp-for="Upload" disabled class="form-control" />
+
+                    </div>
+
+
+
+                </div>
+
+                <br />
+
+
+
+
+                <div class="form-group row">
+
+                    <div class="col-md-4">
+                        <input type="submit" class="btn btn-info" value="Delete" />
+                    </div>
+                    <div class="col-md-4">
+                        <a asp-action="Index" class="btn btn-success">
+                            Back
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</form>
+<!-- without this scripts the validation requires the server side validation
+    But with this I can do client side validation using javascript
+    to make simple :
+        IT DOES NOT REQUIRE TO REFRESH FOR VALIDATION BUT WITHOUT THIS REQUIRED REFFRESH-->

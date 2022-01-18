@@ -61,7 +61,7 @@ namespace uygoman.Controllers
                     if (obj != null)
                     {
 
-                        return RedirectToAction("Company");
+                        return RedirectToAction("Admin");
 
 
                     }
@@ -78,7 +78,7 @@ namespace uygoman.Controllers
 
 
 
-        public IActionResult Company()
+        public IActionResult Admin()
         {
             return View();
         }
