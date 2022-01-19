@@ -14,7 +14,7 @@ namespace uygoman.Models
         public int ID { get; set; }
 
         [Required]
-        [StringLength(8)]
+        //[StringLength(8)]
         [DisplayName("Create Keys:")]
         public string Keys { get; set; }
 

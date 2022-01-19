@@ -70,8 +70,7 @@ namespace uygoman.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Keys")
-                        .IsRequired()
-                        .HasMaxLength(8);
+                        .IsRequired();
 
                     b.Property<string>("Product_Name");
 

@@ -12,11 +12,18 @@ namespace uygoman.Controllers
     public class KeyController : Controller
     {
         private readonly AppDBContext _db;
+      
+
+
 
         public KeyController(AppDBContext db)
         {
             _db = db;
         }
+
+       
+
+
 
         public IActionResult Index()
         {
@@ -75,6 +82,10 @@ namespace uygoman.Controllers
 
 
         }
+
+      
+
+
 
     }
 }

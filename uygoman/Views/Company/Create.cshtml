@@ -7,7 +7,7 @@
     Layout = "_Layout2";
 }
 
-<form method="post" asp-action="Create">
+<form method="post" asp-action="Create" enctype="multipart/form-data">
     <div class="table-bordered ">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <!--<div asp-validation-summary="All" class="text-danger"></div>-->
@@ -102,8 +102,8 @@
                         <label asp-for="Upload"></label>
                     </div>
                     <div class="col-md-4">
-
-                        <input asp-for="Upload" class="form-control" />
+                        @*@Html.EditorFor(model => model.Upload, new { htmlAttributes = new { @class = "form-control" } })*@
+                        <input type="file" asp-for="Upload" class="form-control" /> 
                         <span asp-validation-for="Upload" class="text-danger"></span>
                     </div>
 
