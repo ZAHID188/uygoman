@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Key\Edit.cshtml.bak" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\Key\Edit.cshtml.bak" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\lib\bootstrap\css\bootstrap-grid.css" />
     <None Include="wwwroot\lib\bootstrap\css\bootstrap-grid.css.map" />
     <None Include="wwwroot\lib\bootstrap\css\bootstrap-grid.min.css" />
@@ -158,6 +166,14 @@
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Views\Company\Edit.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Key\Delete.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Product\Delete.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Views\Shared\_Layout2.cshtml">

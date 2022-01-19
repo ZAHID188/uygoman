@@ -67,3 +67,10 @@ C:\Users\zahid\Desktop\clean\WEBSITE_DEV\uygoman\uygoman\uygoman\obj\Debug\netco
 C:\Users\zahid\Desktop\clean\WEBSITE_DEV\uygoman\uygoman\uygoman\obj\Debug\netcoreapp2.1\Razor\Views\Company\Create.g.cshtml.cs
 C:\Users\zahid\Desktop\clean\WEBSITE_DEV\uygoman\uygoman\uygoman\obj\Debug\netcoreapp2.1\Razor\Views\Company\Delete.g.cshtml.cs
 C:\Users\zahid\Desktop\clean\WEBSITE_DEV\uygoman\uygoman\uygoman\obj\Debug\netcoreapp2.1\Razor\Views\Company\Edit.g.cshtml.cs
+C:\Users\zahid\Desktop\clean\WEBSITE_DEV\uygoman\uygoman\uygoman\obj\Debug\netcoreapp2.1\Razor\Views\Product\Index.g.cshtml.cs
+C:\Users\zahid\Desktop\clean\WEBSITE_DEV\uygoman\uygoman\uygoman\obj\Debug\netcoreapp2.1\Razor\Views\Product\Create.g.cshtml.cs
+C:\Users\zahid\Desktop\clean\WEBSITE_DEV\uygoman\uygoman\uygoman\obj\Debug\netcoreapp2.1\Razor\Views\Key\Index.g.cshtml.cs
+C:\Users\zahid\Desktop\clean\WEBSITE_DEV\uygoman\uygoman\uygoman\obj\Debug\netcoreapp2.1\Razor\Views\Key\Create.g.cshtml.cs
+C:\Users\zahid\Desktop\clean\WEBSITE_DEV\uygoman\uygoman\uygoman\obj\Debug\netcoreapp2.1\Razor\Views\Key\Delete.g.cshtml.cs
+C:\Users\zahid\Desktop\clean\WEBSITE_DEV\uygoman\uygoman\uygoman\obj\Debug\netcoreapp2.1\Razor\Views\Product\Delete.g.cshtml.cs
+C:\Users\zahid\Desktop\clean\WEBSITE_DEV\uygoman\uygoman\uygoman\obj\Debug\netcoreapp2.1\Razor\Views\Product\Deletepost.g.cshtml.cs

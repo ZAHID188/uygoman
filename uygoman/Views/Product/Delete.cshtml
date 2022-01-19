@@ -1,0 +1,53 @@
+﻿@model uygoman.Models.Product
+
+
+@{
+    Layout = "_Layout2";
+}
+
+
+<form method="post" asp-action="Deletepost">
+    <input asp-for="ProductName" hidden />
+    <div class="table-bordered ">
+
+
+        <div class="form-group row">
+            <h2 class="text-info ">
+                Delete Keys
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+           
+               
+
+                <div class="form-group row">
+                    
+                        <div class="col-md-2">
+                            <input type="submit" class="btn btn-info" value="Delete" />
+                        </div>
+                        <div class="col-md-2">
+                            <a asp-action="Index" class="btn btn-success">
+                                Back
+                            </a>
+                        </div>
+
+                    
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</form>
+<!-- without this scripts the validation requires the server side validation
+    But with this I can do client side validation using javascript
+    to make simple :
+        IT DOES NOT REQUIRE TO REFRESH FOR VALIDATION BUT WITHOUT THIS REQUIRED REFFRESH-->

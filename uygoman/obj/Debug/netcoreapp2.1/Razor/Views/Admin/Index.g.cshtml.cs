@@ -71,7 +71,7 @@ using uygoman.Models;
             WriteLiteral("<br /><br />\r\n\r\n\r\n<div class=\"container p-3\">\r\n    <div class=\"row pt-4\">\r\n        <div class=\"col-md-6\">\r\n            <h2 class=\"text-primary\">Admin List</h2>\r\n        </div>\r\n        <div class=\"col-md-6\">\r\n            ");
             EndContext();
             BeginContext(320, 115, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b252424223e41fe91eaa146b530320c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d4beac5d43c42bfa3a6416eb761016d", async() => {
                 BeginContext(390, 41, true);
                 WriteLiteral("\r\n                New Admin\r\n            ");
                 EndContext();
@@ -147,7 +147,7 @@ using uygoman.Models;
             WriteLiteral("</td>\r\n                        <td class=\"text-center\">\r\n                            <div class=\"btn-group\" role=\"group\">\r\n                                ");
             EndContext();
             BeginContext(1268, 174, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07a10cb9ea86474eb78d85d0fc789343", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "995eaa0596a347849e78d2c164979c45", async() => {
                 BeginContext(1362, 76, true);
                 WriteLiteral("\r\n                                    Edit\r\n                                ");
                 EndContext();
@@ -185,7 +185,7 @@ using uygoman.Models;
             WriteLiteral("\r\n                                ");
             EndContext();
             BeginContext(1476, 177, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a05f390ccfd4fbf8d81009c8febdbdc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf92fd6e75534e98b7280fab7f159fff", async() => {
                 BeginContext(1571, 78, true);
                 WriteLiteral("\r\n                                    Delete\r\n                                ");
                 EndContext();

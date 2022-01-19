@@ -17,6 +17,8 @@ namespace uygoman.DATA
         }
         public DbSet<Admin> Admins { get; set; }
         public DbSet<CompanyReg> CompanyRegs { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<CrKey> CrKeys { get; set; }
 
 
 
