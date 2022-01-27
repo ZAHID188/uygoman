@@ -1,15 +1,12 @@
 ﻿@*Index*@
 
-@model IEnumerable<uygoman.Models.CompanyReg> 
+@model IEnumerable<uygoman.Models.CompanyReg>
 
 
 
 
 
 
-@{
-    Layout = "_Layout2";
-}
 
 
 <br /><br />
@@ -17,7 +14,7 @@
 
 
 
-<div class="container p-3">
+@*<div class="container p-3">
     <div class="row pt-4">
         <div class="col-md-6">
             <h2 class="text-primary">Company Informations</h2>
@@ -86,7 +83,90 @@
         <p>No category</p>
     }
 
-</div>
+</div>*@
 
 
+
+      <section class="content">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-12">
+                      <div class="card">
+                          <div class="card-header">
+                              <h3 class="card-title">Company Informations</h3>
+                              <div class="card-tools">
+                                  <form >
+                                      <div class="input-group input-group-sm" style="width: 150px;">
+                                          <input type="text" class="form-control float-right" placeholder="Search company Name/Email" value="@ViewData["CompanyDetails"]"name="search"  >
+                                          <div class="input-group-append">
+                                              <button type="submit" class="btn btn-default">
+                                                  <i class="fas fa-search"></i>
+                                              </button>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                          <!-- /.card-header -->
+                          <div class="card-body table-responsive p-0">
+
+                              @if (Model.Count() > 0)
+                              {
+                                  <table class="table table-bordered  table-striped " style="width100%">
+                                      <thead>
+                                          <tr>
+
+                                              <th>Company Name</th>
+                                              <th>Company Arabic name</th>
+                                              <th>Company Brand name</th>
+                                              <th>Email</th>
+                                              <th>Phone number</th>
+                                              <th>Contact person</th>
+                                              <th>Upload Documents</th>
+                                              <th>
+
+                                              </th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          @foreach (var obj in Model)
+                                          {
+                                              <tr>
+                                                  <td>@obj.CmpName</td>
+                                                  <td>@obj.CmpArabicName</td>
+                                                  <td>@obj.CmpBrandName</td>
+                                                  <td>@obj.Email</td>
+                                                  <td>@obj.Phone</td>
+                                                  <td>@obj.ContactPerson</td>
+                                                  <td>@obj.Upload</td>
+
+
+                                                  <td class="text-center">
+                                                      <div class="btn-group" role="group">
+                                                          <a asp-controller="Company" asp-route-idnum="@obj.ID" asp-action="Edit" class="btn btn-primary">
+                                                              Edit
+                                                          </a>
+                                                          <a asp-controller="Company" asp-route-idnum="@obj.ID" asp-action="Delete" class="btn btn-danger">
+                                                              Delete
+                                                          </a>
+                                                      </div>
+
+                                                  </td>
+                                              </tr>
+                                          }
+                                      </tbody>
+                                  </table>
+                              }
+                              else
+                              {
+                                  <p>No category</p>
+                              }
+                          </div>
+                          <!-- /.card-body -->
+                      </div>
+                      <!-- /.card -->
+                  </div>
+              </div>
+          </div>
+      </section>
 

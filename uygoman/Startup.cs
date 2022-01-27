@@ -40,7 +40,7 @@ namespace uygoman
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
             services.AddDataProtection();
-
+            
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

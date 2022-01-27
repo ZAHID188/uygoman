@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "a6ff7e56323e490e8fe93f24f5f2b0527b12d902"
+    "signature": "60d0b963cf3bad52235ad5119f74fc125d203b13"
   },
   "compilationOptions": {
     "defines": [
@@ -30,7 +30,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.14",
           "Microsoft.EntityFrameworkCore.Tools": "2.1.14",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
+          "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.6"
         },
         "runtime": {
           "uygoman.dll": {}
@@ -39,6 +40,7 @@
           "uygoman.dll": {}
         }
       },
+      "jQuery/1.8.0": {},
       "Microsoft.AspNetCore.Identity/2.1.6": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Cookies": "2.1.1",
@@ -223,6 +225,11 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Identity.Stores.dll": {}
+        }
+      },
+      "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+        "dependencies": {
+          "jQuery": "1.8.0"
         }
       },
       "Microsoft.NETCore.App/2.1.0": {
@@ -3521,6 +3528,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "jQuery/1.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-laDFQRJrIRHT0Z0GVYklMt3bE0iu0MZFJwHwg21kt3SHb7Bj8TdNiM3K+ZdK1DzB8ZxKy8z7NkJvwMas+dmHBw==",
+      "path": "jquery/1.8.0",
+      "hashPath": "jquery.1.8.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Identity/2.1.6": {
       "type": "package",
       "serviceable": true,
@@ -3618,6 +3632,13 @@
       "sha512": "sha512-+y0RlwL/C0Ujw3Hx/LPqho5x2CeQVWAT4uAnTa+lLumIcROWjR/Mhr7+ggg3fY2t20+XZidxAYZhGGo/nXndPQ==",
       "path": "microsoft.extensions.identity.stores/2.1.6",
       "hashPath": "microsoft.extensions.identity.stores.2.1.6.nupkg.sha512"
+    },
+    "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-udg7ZBszgqxloQ+ShJRONKQAzPnJIlUhKZB+AIvZdKh7CDc5Nms69T9X0hN5i+NqMmQE6njkzdCcEb16lPdJTw==",
+      "path": "microsoft.jquery.unobtrusive.ajax/3.2.6",
+      "hashPath": "microsoft.jquery.unobtrusive.ajax.3.2.6.nupkg.sha512"
     },
     "Microsoft.NETCore.App/2.1.0": {
       "type": "package",

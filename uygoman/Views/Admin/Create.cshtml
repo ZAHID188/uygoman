@@ -3,80 +3,84 @@
 @{
     ViewData["Title"] = "Create";
 }
-@{
-    Layout = "_Layout2";
-}
 
-<form method="post" asp-action="Create">
-    <div class="table-bordered ">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <!--<div asp-validation-summary="All" class="text-danger"></div>-->
+<div class="container ">
+    <form method="post" asp-action="Create">
+        <div class="text-center table ">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <!--<div asp-validation-summary="All" class="text-danger"></div>-->
 
-        <div class="form-group row">
-            <h2 class="text-info ">
-                Add Admin
-            </h2>
-        </div>
-        <div class="row">
-            <div class="col-md-8">
-                <div class="form-group row">
-                    <div class="col-md-4">
-                        <!-- this asp-for is the data anotation check the model-->
-                        <label asp-for="UserID"></label>
-                    </div>
-                    <div class="col-md-8">
-
-                        <input asp-for="UserID" class="form-control" />
-                        <span asp-validation-for="UserID" class="text-danger"></span>
-                    </div>
+            <div class="form-group row">
+                <div class="col-md-2 ">
+                   
                 </div>
-                <div class="form-group row">
-                    <div class="col-md-4">
-                        <label asp-for="Password"></label>
-
-                    </div>
-                    <div class="col-md-8">
-                        <input asp-for="Password" class="form-control" />
-                        <span asp-validation-for="Password" class="text-danger"></span>
-
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-md-8">
+                <h2 class="text-info col-md-6 ">
+                    Add Admin
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group row">
                         <div class="col-md-4">
-                            <input type="submit" class="btn btn-info" value="Create" />
+                            <!-- this asp-for is the data anotation check the model-->
+                            <label asp-for="UserID"></label>
                         </div>
+                        <div class="col-md-8">
+
+                            <input asp-for="UserID" class="form-control" />
+                            <span asp-validation-for="UserID" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <div class="col-md-4">
-                            <a asp-action="Index" class="btn btn-success">
-                                Back
-                            </a>
+                            <label asp-for="Password"></label>
+
+                        </div>
+                        <div class="col-md-8">
+                            <input asp-for="Password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+
+                        </div>
+                    </div>
+
+                    <div class=" row">
+                        <div class="row col-md-12">
+                            <div class="col-md-4">
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="submit" class="btn btn-info" value="Create" />
+                                </div>
+                                <div class="col-md-5">
+                                    <a asp-action="Index" class="btn btn-success">
+                                        Back
+                                    </a>
+                                </div>
+
+                            </div>
+                            @*<div class="col-md-4">
+
+        </div>*@
                         </div>
 
-                    </div>
-                    <div class="col-md-4">
-                        Text Box
-                    </div>
                 </div>
 
             </div>
 
+
+
         </div>
 
 
 
+    </form>
+    <!-- without this scripts the validation requires the server side validation
+        But with this I can do client side validation using javascript
+        to make simple :
+            IT DOES NOT REQUIRE TO REFRESH FOR VALIDATION BUT WITHOUT THIS REQUIRED REFFRESH-->
+    @section Scripts{
+        @{ <partial name="_ValidationScriptsPartial" /> }
+    }
+
+
+
     </div>
-
-
-
-</form>
-<!-- without this scripts the validation requires the server side validation
-    But with this I can do client side validation using javascript
-    to make simple :
-        IT DOES NOT REQUIRE TO REFRESH FOR VALIDATION BUT WITHOUT THIS REQUIRED REFFRESH-->
-@section Scripts{
-    @{ <partial name="_ValidationScriptsPartial" /> }
-}
-
-
-
