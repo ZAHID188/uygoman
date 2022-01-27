@@ -61,7 +61,7 @@ using uygoman.Models;
             WriteLiteral("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<br /><br />\r\n\r\n\r\n\r\n\r\n<div class=\"container p-3\">\r\n    <div class=\"row pt-4\">\r\n        <div class=\"col-md-6\">\r\n            <h2 class=\"text-primary\"> Security Keys</h2>\r\n        </div>\r\n        <div class=\"col-md-6\">\r\n            ");
             EndContext();
             BeginContext(300, 116, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "398f506b60cb4f21ba19f005428d20e3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b42e1a07a0fd4df1a1e0c87608646142", async() => {
                 BeginContext(373, 39, true);
                 WriteLiteral("\r\n                New Key\r\n            ");
                 EndContext();
@@ -142,7 +142,7 @@ using uygoman.Models;
             WriteLiteral("                                ");
             EndContext();
             BeginContext(1372, 180, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36a36fb91e164a92a754bdf59364ac53", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "12ef4c17986248ca89927ae70c406723", async() => {
                 BeginContext(1470, 78, true);
                 WriteLiteral("\r\n                                    Delete\r\n                                ");
                 EndContext();

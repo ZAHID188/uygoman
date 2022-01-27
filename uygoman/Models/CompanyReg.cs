@@ -39,6 +39,9 @@ namespace uygoman.Models
         public string Upload { get; set; }
 
 
+        public string UploadFileName { get; set; }
+
+
 
 
 

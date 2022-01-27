@@ -59,11 +59,6 @@ namespace uygoman.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(IFormFile ifile,CompanyReg obj)
         {
-            
-            
-
-
-
             if (ModelState.IsValid)
             {
                 //  image file
@@ -76,7 +71,7 @@ namespace uygoman.Controllers
                         var stream = new FileStream(saveimg, FileMode.Create);
                         ifile.CopyToAsync(stream);
 
-                        //obj.Upload = ifile.FileName;
+                        obj.UploadFileName = ifile.FileName;
                         obj.Upload = saveimg;
 
                     }

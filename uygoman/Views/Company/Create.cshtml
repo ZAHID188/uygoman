@@ -205,34 +205,17 @@
                             <div class="form-group">
                                 <div class="col-md-6">
 
-                                    <form method="post" enctype="multipart/form-data" asp-action="Create">
-
-                                        <input type="file" name="ifile" />
-                                        <input type="submit"  value="upload file" />
-</form>
-
-                                   @* <label for="exampleInputFile">File input</label>
-                                    <div class="input-group">
-                                        <div class="custom-file">
-                                            <input type="file" asp-for="Upload" class="custom-file-input"  name="ifile">
-                                            <label asp-for="Upload" class="custom-file-label" ></label>
-                                            <span asp-validation-for="Upload" class="text-danger"></span>
-                                        </div>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">Upload</span>
-                                        </div>
-                                    </div>*@
+                                    <label asp-for="Upload"></label>
+                                    <input type="file" name="ifile" class="form-control-file" />
 
                                 </div>
+
+
+                                   
                                 <div class="col-md-6">
-
-
-
                                 </div>
 
                             </div>
-
-                        </div>
 
 
                         @*-------

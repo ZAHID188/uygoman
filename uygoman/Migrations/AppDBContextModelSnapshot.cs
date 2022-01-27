@@ -58,6 +58,8 @@ namespace uygoman.Migrations
 
                     b.Property<string>("Upload");
 
+                    b.Property<string>("UploadFileName");
+
                     b.HasKey("ID");
 
                     b.ToTable("CompanyRegs");

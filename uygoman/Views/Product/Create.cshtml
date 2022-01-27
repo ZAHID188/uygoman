@@ -4,78 +4,82 @@
     ViewData["Title"] = "Create";
 }
 
-
-<form method="post" asp-action="Create">
-    <div class="table-bordered ">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <!--<div asp-validation-summary="All" class="text-danger"></div>-->
-        <br />
-
-        <div class="form-group row">
-            <h2 class="text-info text-center ">
-                Add Product
-            </h2>
-        </div>
-        <br />
-        <div class="row">
-            <div class=" col-md-12">
-                <div class="form-group row bg-light">
-                    <div class="col-md-2">
-                        <!-- this asp-for is the data anotation check the model-->
-                        <label asp-for="ProductName"></label>
-                    </div>
-                    <div class="col-md-5">
-
-                        <input asp-for="ProductName" class="form-control" />
-                        <span asp-validation-for="ProductName" class="text-danger"></span>
-                    </div>
-
-                   
-
-                </div>
-
+<section class="content">
+    <div class="container-fluid">
+        <form method="post" asp-action="Create">
+            <div class="table">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <!--<div asp-validation-summary="All" class="text-danger"></div>-->
                 <br />
 
-               
-
-
-
-
                 <div class="form-group row">
+                    <h2 class="text-info text-center ">
+                        Add Product
+                    </h2>
+                </div>
+                <br />
+                <div class="row">
+                    <div class=" col-md-12">
+                        <div class="form-group row bg-light">
+                            <div class="col-md-2">
+                                <!-- this asp-for is the data anotation check the model-->
+                                <label asp-for="ProductName"></label>
+                            </div>
+                            <div class="col-md-5">
 
-                    <div class="col-md-4">
-                    </div>
-                    <div class="col-md-1">
-                        <input type="submit" class="btn btn-info" value="Create" />
-                    </div>
-                    <div class="col-md-2">
-                        <a asp-action="Index" class="btn btn-success">
-                            Back
-                        </a>
-                    </div>
+                                <input asp-for="ProductName" class="form-control" />
+                                <span asp-validation-for="ProductName" class="text-danger"></span>
+                            </div>
 
 
+
+                        </div>
+
+                        <br />
+
+
+
+
+
+
+                        <div class="form-group row">
+
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-1">
+                                <input type="submit" class="btn btn-info" value="Create" />
+                            </div>
+                            <div class="col-md-2">
+                                <a asp-action="Index" class="btn btn-success">
+                                    Back
+                                </a>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
 
                 </div>
+
+
 
             </div>
 
+
+
+        </form>
+
         </div>
-
-
-
-    </div>
-
-
-
-</form>
-<!-- without this scripts the validation requires the server side validation
-    But with this I can do client side validation using javascript
-    to make simple :
-        IT DOES NOT REQUIRE TO REFRESH FOR VALIDATION BUT WITHOUT THIS REQUIRED REFFRESH-->
-@section Scripts{
-    @{ <partial name="_ValidationScriptsPartial" /> }
-}
+    </section>
+        <!-- without this scripts the validation requires the server side validation
+            But with this I can do client side validation using javascript
+            to make simple :
+                IT DOES NOT REQUIRE TO REFRESH FOR VALIDATION BUT WITHOUT THIS REQUIRED REFFRESH-->
+        @section Scripts{
+            @{ <partial name="_ValidationScriptsPartial" /> }
+        }
 
 
 

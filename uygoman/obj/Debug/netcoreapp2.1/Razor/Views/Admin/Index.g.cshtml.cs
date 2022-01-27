@@ -115,7 +115,7 @@ using uygoman.Models;
             WriteLiteral("</td>\r\n                        <td class=\"text-center\">\r\n                            <div class=\"btn-group\" role=\"group\">\r\n                                ");
             EndContext();
             BeginContext(1252, 174, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2fb9b75655b41e787c74c1e12d23595", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "244619be060642b8a567ee96eefed923", async() => {
                 BeginContext(1346, 76, true);
                 WriteLiteral("\r\n                                    Edit\r\n                                ");
                 EndContext();
@@ -153,7 +153,7 @@ using uygoman.Models;
             WriteLiteral("\r\n                                ");
             EndContext();
             BeginContext(1460, 177, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f036f8b2bdf438d880c094b5e77c0f6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "23e589bd184a4d38a7e9d68c1347b4af", async() => {
                 BeginContext(1555, 78, true);
                 WriteLiteral("\r\n                                    Delete\r\n                                ");
                 EndContext();

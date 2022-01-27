@@ -61,7 +61,7 @@ using uygoman.Models;
             WriteLiteral("\r\n\r\n\r\n\r\n<br /><br />\r\n\r\n\r\n\r\n\r\n<div class=\"container p-3\">\r\n    <div class=\"row pt-4\">\r\n        <div class=\"col-md-6\">\r\n            <h2 class=\"text-primary\">Products</h2>\r\n        </div>\r\n        <div class=\"col-md-6\">\r\n            ");
             EndContext();
             BeginContext(288, 119, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "43c99e1243f94bcaa27c7f6455a38e30", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c13f478f6284fc4b00d9a4a16da1691", async() => {
                 BeginContext(360, 43, true);
                 WriteLiteral("\r\n                New Product\r\n            ");
                 EndContext();
@@ -130,7 +130,7 @@ using uygoman.Models;
             WriteLiteral("                                ");
             EndContext();
             BeginContext(1328, 188, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "613fffe72708453eaf71ee6d6ef0db15", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "45e98775fd11462e8326f3033a796a5a", async() => {
                 BeginContext(1434, 78, true);
                 WriteLiteral("\r\n                                    Delete\r\n                                ");
                 EndContext();
